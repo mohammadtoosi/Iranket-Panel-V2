@@ -1,0 +1,23 @@
+.gray-sec {
+    height: 150px;
+    background: linear-gradient(to bottom right, white, gray);
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    background: gray;
+}
+
+.-mt45px {
+    margin-top: -45px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.br20px {
+    border-radius: 20px;
+}

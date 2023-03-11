@@ -1,0 +1,31 @@
+.bg {
+  background-color: #ececec;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.br20px {
+  border-radius: 20px;
+}
+
+@font-face {
+  font-family: "iran";
+  src: local("iran"), url("./assets/fonts/iran.woff") format("woff"),
+      url("./assets/fonts/iran.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "iran-bold";
+  src: local("iran-bold"), url("./assets/fonts/iran_bold.woff") format("woff"),
+      url("./assets/fonts/iran_bold.woff2") format("woff2");
+}
+
+.iran {
+  font-family: iran;
+}
+
+.iran-bold {
+  font-family: iranBold;
+}
