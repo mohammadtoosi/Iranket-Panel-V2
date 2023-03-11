@@ -22,30 +22,30 @@ const OrdersSection = () => {
     const [data, setData] = useState([]);
     const [id, setID] = useState(0);
 
-    const fetchOrdersData = async () => {
-        setLoading(true);
-        try {
-            const response = await axios.get(orders.orders, {
-                withCredentials: true,
-            });
-            setData(response.data.psdata);
-            console.log(response);
-            console.log(data);
-        } catch (error) {
-            console.log(error);
-        }
-        setLoading(false);
-    };
+    // const fetchOrdersData = async () => {
+    //     setLoading(true);
+    //     try {
+    //         const response = await axios.get(orders?.orders, {
+    //             withCredentials: true,
+    //         });
+    //         setData(response?.data?.psdata);
+    //         console.log(response);
+    //         console.log(data);
+    //     } catch (error) {
+    //         console.log(error);
+    //     }
+    //     setLoading(false);
+    // };
 
-    const storeOrderId = (id) => {
-        setID(id);
-        dispatch(OrderDetailsActions.setOrderIdHandler(id));
-        dispatch(OrderDetailsActions.toggleOrderDetailsDialog());
-    };
+    // const storeOrderId = (id) => {
+    //     setID(id);
+    //     dispatch(OrderDetailsActions.setOrderIdHandler(id));
+    //     dispatch(OrderDetailsActions.toggleOrderDetailsDialog());
+    // };
 
-    useEffect(() => {
-        fetchOrdersData();
-    }, []);
+    // useEffect(() => {
+    //     fetchOrdersData();
+    // }, []);
 
     return (
         <>
@@ -192,11 +192,11 @@ const OrdersSection = () => {
                                                   <td>
                                                       <button
                                                           className="btn"
-                                                          onClick={() =>
-                                                              storeOrderId(
-                                                                  order?.id_order
-                                                              )
-                                                          }
+                                                        //   onClick={() =>
+                                                        //       storeOrderId(
+                                                        //           order?.id_order
+                                                        //       )
+                                                        //   }
                                                       >
                                                           <Search size="25" />
                                                       </button>

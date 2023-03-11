@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { dashboard } from "../../routes/api";
-import $ from "jquery";
 
 import Menu from "../../components/menu/Menu";
 import Navbar from "../../components/navbar/Navbar";
@@ -23,7 +22,7 @@ const Dashboard = () => {
             const response = await axios.get(dashboard, {
                 withCredentials: true,
             });
-            setData(response.data.psdata);
+            setData(response?.data?.psdata);
             console.log(response?.data?.psdata?.seller?.id);
             localStorage.setItem("s_i", response?.data?.psdata?.seller?.id);
             console.log(response);
